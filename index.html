@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/main.css"/>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="scripts/zepto.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
+</head>
+<body>
+<div class="content">
+	<div>
+		<p id="temp">0.0</p>
+		<select id="snooze">
+			<option value="1">1 min</option>
+			<option value="5">5 min</option>
+			<option value="10">10 min</option>
+			<option value="30">30 min</option>
+			<option value="60">1 hour</option>
+			<option value="240">4 hours</option>
+			<option value="480">8 hours</option>
+		</select>
+		<button class="button" id="snoozeButton">Snooze</button>
+	</div>
+</div>
+<div id="log">
+
+</div>
+
+<footer class="footer">
+	<div>Footer</div>
+</footer>
+</body>
+</html>
