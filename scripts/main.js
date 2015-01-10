@@ -8,7 +8,7 @@ function id(element) {
 }
 
 function onDeviceReady() {
-    aler('DeviceReady');
+    alert('DeviceReady');
 	// navigator.splashscreen.hide();
 	var notificationApp = new NotificationApp();
 	notificationApp.run();
