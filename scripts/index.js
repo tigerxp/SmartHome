@@ -47,7 +47,7 @@ var app = {
             if (data && data['temp']) {
                 var temp = data['temp'];
                 var colorClass = data['cls'] ? data['cls'] : '';
-                $('#temp').text(data['temp'].toFixed(2)).attr('class', colorClass);
+                $('#temp').text(data['temp'].toFixed(2)).parent().attr('class', colorClass);
                 if (self.snoozedFor > 0) {
                     // Do not check if snoozed
                     self.snoozedFor -= INTERVAL;
