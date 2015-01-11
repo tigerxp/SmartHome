@@ -20,13 +20,30 @@ module.exports = [
         "merges": [
             "navigator.notification"
         ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.background-mode/www/background-mode.js",
+        "id": "de.appplant.cordova.plugin.background-mode.BackgroundMode",
+        "clobbers": [
+            "cordova.plugins.backgroundMode",
+            "plugin.backgroundMode"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "org.apache.cordova.vibration": "0.3.8",
-    "org.apache.cordova.dialogs": "0.2.7"
+    "org.apache.cordova.dialogs": "0.2.7",
+    "de.appplant.cordova.plugin.background-mode": "0.6.3",
+    "org.apache.cordova.device": "0.2.14-dev"
 }
 // BOTTOM OF METADATA
 });
